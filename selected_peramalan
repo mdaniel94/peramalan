@@ -1,0 +1,5 @@
+SELECT * from tb_penjualan INNER JOIN tb_mobil on tb_penjualan.id_mobil= tb_mobil.id_mobil INNER JOIN tb_pemesanan on tb_penjualan.id_penjualan=tb_pemesanan.id_pemesanan
+
+UPDATE `peramalan`.`tb_pemesanan` SET `verifikasi` = '1' WHERE `tb_pemesanan`.`id_pemesanan` = 6;
+
+SELECT * FROM `tb_penjualan` inner JOIN tb_mobil where year(tgl_penjualan)='2014' AND month(tgl_penjualan)='4' and unit='verios'
